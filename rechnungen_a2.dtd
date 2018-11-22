@@ -1,0 +1,39 @@
+<!ELEMENT rechnungen (rechnung+)>
+<!ELEMENT rechnung (leistungs-empfaenger, unternehmer, bestellung,
+						ausstellungs-datum?, rechnungs-nummer?,
+						rechnungs-betrag)>				
+<!ELEMENT leistungs-empfaenger (name, anschrift)>
+<!ELEMENT name (titel?, vorname, nachname)>
+<!ELEMENT titel (#PCDATA)>
+<!ELEMENT vorname (#PCDATA)>
+<!ELEMENT nachname (#PCDATA)>
+<!ELEMENT anschrift (strasse, haus-nummer, post-leit-zahl, stadt)>
+<!ELEMENT strasse (#PCDATA)>
+<!ELEMENT haus-nummer (#PCDATA)>
+<!ELEMENT post-leit-zahl (#PCDATA)>
+<!ELEMENT stadt (#PCDATA)>
+<!ELEMENT unternehmer (firmen-name?, anschrift?, 
+							(steuer-nummer | umsatz-steuer-identifikations-nummer))>
+<!ELEMENT firmen-name (#PCDATA)>
+<!ELEMENT steuer-nummer (#PCDATA)>
+<!ELEMENT umsatz-steuer-identifikations-nummer (#PCDATA)>
+<!ELEMENT bestellung ((leistung)+)>
+<!ELEMENT leistung (menge?, einheit?, bezeichnung, einzel-preis?, 
+						gesamt-preis, datum?, mehr-wert-steuer)> 
+<!ELEMENT menge (#PCDATA)>
+<!ELEMENT einheit (#PCDATA)>
+<!ELEMENT bezeichnung (#PCDATA)>
+<!ELEMENT einzel-preis (#PCDATA)>
+<!ATTLIST einzel-preis 	waehrung		CDATA 	#REQUIRED>
+<!ELEMENT gesamt-preis (#PCDATA)>
+<!ATTLIST gesamt-preis 	waehrung		CDATA 	#REQUIRED>
+<!ELEMENT datum (#PCDATA)>
+<!ELEMENT mehr-wert-steuer (#PCDATA)>
+<!ELEMENT ausstellungs-datum (#PCDATA)>	
+<!ELEMENT rechnungs-nummer (#PCDATA)>
+<!ELEMENT rechnungs-betrag (gesamt, netto-betrag?, mehr-wert-steuer-gesamt?)>
+<!ATTLIST rechnungs-betrag 	waehrung 	CDATA 	#REQUIRED>
+<!ELEMENT gesamt (#PCDATA)>
+<!ELEMENT netto-betrag (#PCDATA)>
+<!ELEMENT mehr-wert-steuer-gesamt (#PCDATA)>
+		

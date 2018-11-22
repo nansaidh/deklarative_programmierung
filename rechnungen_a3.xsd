@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema 	xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+			elementFormDefault="qualified">
+			
+	<xs:element name="rechnungen">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="rechnung" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="rechnung">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="leistungs-empfaenger"/>
+				<xs:element ref="unternehmer"/>
+				<xs:element ref="bestellung"/>
+				<xs:element name="ausstellungs-datum" type="xs:date"/>
+				<xs:element name="rechnungs-nummer" type="xs:string"/>
+				<xs:element ref="rechnungs-betrag"/>
+				<xs:element ref="zahlungs-moeglichkeit"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="leistungs-empfaenger">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="name"/>
+				<xs:element ref="anschrift"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="unternehmer">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="firmen-name" type="xs:string"/>
+				<xs:element ref="anschrift"/>
+				<xs:element name="telefon" type="xs:string" minOccurs="0"/>
+				<xs:element name="fax" type="xs:string" minOccurs="0"/>
+				<xs:element ref="e-mail" minOccurs="0"/>
+				<xs:choice>
+					<xs:element name="steuer-nummer" type="xs:string"/>
+					<xs:element name="umsatz-steuer-identifikations-nummer" type="xs:string"/>
+				</xs:choice>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="bestellung">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="leistung" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="rechnungs-betrag">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="gesamt" type="xs:decimal"/>
+				<xs:element name="netto-betrag" type="xs:decimal"/>
+				<xs:element name="mehr-wert-steuer-gesamt" type="xs:decimal"/>
+			</xs:sequence>
+			<xs:attribute name="waehrung" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="zahlungs-moeglichkeit">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="zahlungs-art" type="xs:string" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="name">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="titel" type="xs:string"/>
+				<xs:element name="vorname" type="xs:string" minOccurs="0"/>
+				<xs:element name="nachname" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="anschrift">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="strasse" type="xs:string"/>
+				<xs:element name="haus-nummer" type="xs:string"/>
+				<xs:element name="post-leit-zahl" type="xs:unsignedInt"/>
+				<xs:element name="stadt" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="e-mail">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="[A-Za-z0-9.]+@[A-Za-z]+.[a-z]+"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	
+	<xs:complexType name="preis">
+		<xs:simpleContent>
+			<xs:extension base="xs:decimal">
+				<xs:attribute name="waehrung" type="xs:string"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	
+	<xs:element name="leistung">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="menge" type="xs:unsignedInt" minOccurs="0"/>
+				<xs:element name="einheit" type="xs:string" minOccurs="0"/>
+				<xs:element name="bezeichnung" type="xs:string"/>
+				<xs:element name="einzel-preis" type="preis" minOccurs="0"/>
+				<xs:element name="gesamt-preis" type="preis"/>
+				<xs:element name="datum" type="xs:date" minOccurs="0"/>
+				<xs:element name="mehr-wert-steuer" type="xs:unsignedInt" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

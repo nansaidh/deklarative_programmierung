@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rechnungen SYSTEM "rechnungen_a2.dtd">
+
+<rechnungen>
+
+	<rechnung>
+	
+		<leistungs-empfaenger>
+		
+			<name>
+				<titel>Frau</titel>
+				<vorname>Sybille</vorname>
+				<nachname>Sonder-Suttelrau</nachname>
+			</name>
+			
+			<anschrift>
+				<strasse>Am Süttelbach</strasse>
+				<haus-nummer>17</haus-nummer>
+				<post-leit-zahl>77070</post-leit-zahl>
+				<stadt>Siedelsuderstadt</stadt>
+			</anschrift>
+			
+		</leistungs-empfaenger>
+	
+		
+	    <unternehmer>
+	    
+	        <firmen-name>Kleintier Meier GmbH</firmen-name>
+	
+	        <anschrift>
+	            <strasse>Meierring</strasse>
+	            <haus-nummer>3</haus-nummer>
+	            <post-leit-zahl>81828</post-leit-zahl>
+	            <stadt>Machthausen</stadt>
+	        </anschrift>
+	        
+	        <steuer-nummer>88 123/8282 2</steuer-nummer>
+	        
+	    </unternehmer>
+	    
+	    <bestellung>
+	    	<leistung>
+	    		<menge>100</menge>
+	    		<bezeichnung>Antike Holzwürmer</bezeichnung>
+	    		<einzel-preis waehrung="Euro">1.50</einzel-preis>
+	    		<gesamt-preis waehrung="Euro">150.00</gesamt-preis>
+	    		<datum>2017/01/01</datum>
+	    		<mehr-wert-steuer>19</mehr-wert-steuer>
+	    	</leistung>
+	    	
+	    	<leistung>
+	    		<menge>1</menge>
+	    		<bezeichnung>Holzwurmfutter</bezeichnung>
+	    		<einzel-preis waehrung="Euro">34.45</einzel-preis>
+	    		<gesamt-preis waehrung="Euro">34.45</gesamt-preis>
+	    		<datum>2017/01/12</datum>
+	    		<mehr-wert-steuer>19</mehr-wert-steuer>
+	    	</leistung>
+	    	
+	    	<leistung>
+	    		<menge>1</menge>
+	    		<bezeichnung>Steinlaus Petrophago</bezeichnung>
+	    		<einzel-preis waehrung="Euro">777.77</einzel-preis>
+	    		<gesamt-preis waehrung="Euro">777.77</gesamt-preis>
+	    		<datum>2017/01/12</datum>
+	    		<mehr-wert-steuer>19</mehr-wert-steuer>
+	    	</leistung>
+	    </bestellung>
+	    
+	    <ausstellungs-datum>2017/01/15</ausstellungs-datum>
+	    
+	    <rechnungs-nummer>657321</rechnungs-nummer>
+	    
+	     <rechnungs-betrag waehrung="Euro">
+			<gesamt>962.22</gesamt>
+			<netto-betrag>808.59</netto-betrag>
+			<mehr-wert-steuer-gesamt>153.63</mehr-wert-steuer-gesamt>
+		</rechnungs-betrag>
+	    
+	</rechnung>
+	
+	
+	<rechnung>
+		
+		<leistungs-empfaenger>
+			<name>
+				<titel>Dr. med.</titel>
+				<vorname>Cyprian</vorname>
+				<nachname>Zottel</nachname>
+			</name>
+			
+			<anschrift>
+				<strasse>Soddelstrudel</strasse>
+				<haus-nummer>5a</haus-nummer>
+				<post-leit-zahl>13023</post-leit-zahl>
+				<stadt>Zotenheim</stadt>
+			</anschrift>
+		</leistungs-empfaenger>
+		
+		<unternehmer>
+			<umsatz-steuer-identifikations-nummer>DE333666999</umsatz-steuer-identifikations-nummer>
+		</unternehmer>
+		
+		<bestellung>
+			<leistung>
+				<menge>3</menge>
+				<einheit>Packungen</einheit>
+				<bezeichnung>Grippemittel "Tumifla"</bezeichnung>
+				<einzel-preis waehrung="Euro">120.00</einzel-preis>
+				<gesamt-preis waehrung="Euro">360.00</gesamt-preis>
+				<mehr-wert-steuer>19</mehr-wert-steuer>
+			</leistung>
+			
+			<leistung>
+				<bezeichnung>Beratung pauschal</bezeichnung>
+				<gesamt-preis waehrung="Euro">50.00</gesamt-preis>
+				<mehr-wert-steuer>19</mehr-wert-steuer>
+			</leistung>
+			
+			<leistung>
+				<menge>2</menge>
+				<einheit>Liter</einheit>
+				<bezeichnung>Abführmittel "Wech damit" pro Liter</bezeichnung>
+				<einzel-preis waehrung="Euro">99.99</einzel-preis>
+				<gesamt-preis waehrung="Euro">199.98</gesamt-preis>
+				<mehr-wert-steuer>19</mehr-wert-steuer>
+			</leistung>
+			
+			<leistung>
+				<menge>2</menge>
+				<einheit>Stück</einheit>
+				<bezeichnung>Energieriegel "Satto"</bezeichnung>
+				<einzel-preis waehrung="Euro">5.98</einzel-preis>
+				<gesamt-preis waehrung="Euro">11.96</gesamt-preis>
+				<mehr-wert-steuer>19</mehr-wert-steuer>
+			</leistung>
+			
+		</bestellung>
+		
+		<rechnungs-betrag waehrung="Euro">
+			<gesamt>621.94</gesamt>
+			<netto-betrag>490.22</netto-betrag>
+			<mehr-wert-steuer-gesamt>116.74</mehr-wert-steuer-gesamt>
+		</rechnungs-betrag>
+		
+	</rechnung>
+	
+</rechnungen>

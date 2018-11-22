@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rechnungen
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation ="rechnungen_a3.xsd">
+	<rechnung>
+		<leistungs-empfaenger>
+			<name>
+				<titel>Frau</titel>
+				<vorname>Sybille</vorname>
+				<nachname>Sonder-Suttelrau</nachname>
+			</name>
+			
+			<anschrift>
+				<strasse>Am Süttelbach</strasse>
+				<haus-nummer>17</haus-nummer>
+				<post-leit-zahl>77070</post-leit-zahl>
+				<stadt>Siedelsuderstadt</stadt>
+			</anschrift>
+		</leistungs-empfaenger>
+	
+	    <unternehmer>
+	        <firmen-name>Kleintier Meier GmbH</firmen-name>
+	
+	        <anschrift>
+	            <strasse>Meierring</strasse>
+	            <haus-nummer>3</haus-nummer>
+	            <post-leit-zahl>81828</post-leit-zahl>
+	            <stadt>Machthausen</stadt>
+	        </anschrift>
+	        
+	        <steuer-nummer>88 123/8282 2</steuer-nummer>
+	    </unternehmer>
+	    
+	    <bestellung>
+	    	<leistung>
+	    		<menge>100</menge>
+	    		<bezeichnung>Antike Holzwürmer</bezeichnung>
+	    		<einzel-preis waehrung="Euro">1.50</einzel-preis>
+	    		<gesamt-preis waehrung="Euro">150.00</gesamt-preis>
+	    		<datum>2017-01-01</datum>
+	    		<mehr-wert-steuer>19</mehr-wert-steuer>
+	    	</leistung>
+	    	
+	    	<leistung>
+	    		<menge>1</menge>
+	    		<bezeichnung>Holzwurmfutter</bezeichnung>
+	    		<einzel-preis waehrung="Euro">34.45</einzel-preis>
+	    		<gesamt-preis waehrung="Euro">34.45</gesamt-preis>
+	    		<datum>2017-01-12</datum>
+	    		<mehr-wert-steuer>19</mehr-wert-steuer>
+	    	</leistung>
+	    	
+	    	<leistung>
+	    		<menge>1</menge>
+	    		<bezeichnung>Steinlaus Petrophago</bezeichnung>
+	    		<einzel-preis waehrung="Euro">777.77</einzel-preis>
+	    		<gesamt-preis waehrung="Euro">777.77</gesamt-preis>
+	    		<datum>2017-01-12</datum>
+	    		<mehr-wert-steuer>19</mehr-wert-steuer>
+	    	</leistung>
+	    </bestellung>
+	    
+	    <ausstellungs-datum>2017-01-15</ausstellungs-datum>
+	    
+	    <rechnungs-nummer>657321</rechnungs-nummer>
+	    
+	     <rechnungs-betrag waehrung="Euro">
+			<gesamt>962.22</gesamt>
+			<netto-betrag>808.59</netto-betrag>
+			<mehr-wert-steuer-gesamt>153.63</mehr-wert-steuer-gesamt>
+		</rechnungs-betrag>
+		
+		<zahlungs-moeglichkeit>
+			<zahlungs-art>Bankverbindung: Kleintier Meier - Sparkasse Karlsruhe - BLZ 66050101 - Kontonr.:987654321</zahlungs-art>
+		</zahlungs-moeglichkeit>    
+	</rechnung>
+	
+	<rechnung>
+		<leistungs-empfaenger>
+			<name>
+				<titel>Dr. med.</titel>
+				<vorname>Cyprian</vorname>
+				<nachname>Zottel</nachname>
+			</name>
+			
+			<anschrift>
+				<strasse>Soddelstrudel</strasse>
+				<haus-nummer>5a</haus-nummer>
+				<post-leit-zahl>13023</post-leit-zahl>
+				<stadt>Zotenheim</stadt>
+			</anschrift>
+		</leistungs-empfaenger>
+		
+		<unternehmer>
+			<firmen-name>Rochade-La Hoff Pharma GmbH</firmen-name>
+			<anschrift>
+				<strasse>An der Chemie</strasse>
+				<haus-nummer>17</haus-nummer>
+				<post-leit-zahl>79639</post-leit-zahl>
+				<stadt>Grenzych-Wahlen</stadt>
+			</anschrift>
+			<telefon>07624/666333999</telefon>
+			<fax>07624/666333990</fax>
+			<umsatz-steuer-identifikations-nummer>DE333666999</umsatz-steuer-identifikations-nummer>
+		</unternehmer>
+		
+		<bestellung>
+			<leistung>
+				<menge>3</menge>
+				<einheit>Packungen</einheit>
+				<bezeichnung>Grippemittel "Tumifla"</bezeichnung>
+				<einzel-preis waehrung="Euro">120.00</einzel-preis>
+				<gesamt-preis waehrung="Euro">360.00</gesamt-preis>
+				<mehr-wert-steuer>19</mehr-wert-steuer>
+			</leistung>
+			
+			<leistung>
+				<bezeichnung>Beratung pauschal</bezeichnung>
+				<gesamt-preis waehrung="Euro">50.00</gesamt-preis>
+				<mehr-wert-steuer>19</mehr-wert-steuer>
+			</leistung>
+			
+			<leistung>
+				<menge>2</menge>
+				<einheit>Liter</einheit>
+				<bezeichnung>Abführmittel "Wech damit" pro Liter</bezeichnung>
+				<einzel-preis waehrung="Euro">99.99</einzel-preis>
+				<gesamt-preis waehrung="Euro">199.98</gesamt-preis>
+				<mehr-wert-steuer>19</mehr-wert-steuer>
+			</leistung>
+			
+			<leistung>
+				<menge>2</menge>
+				<einheit>Stück</einheit>
+				<bezeichnung>Energieriegel "Satto"</bezeichnung>
+				<einzel-preis waehrung="Euro">5.98</einzel-preis>
+				<gesamt-preis waehrung="Euro">11.96</gesamt-preis>
+				<mehr-wert-steuer>19</mehr-wert-steuer>
+			</leistung>
+		</bestellung>
+		
+		<ausstellungs-datum>2017-08-08</ausstellungs-datum>
+		
+		<rechnungs-nummer>98-798-7987</rechnungs-nummer>
+		
+		<rechnungs-betrag waehrung="Euro">
+			<gesamt>621.94</gesamt>
+			<netto-betrag>490.22</netto-betrag>
+			<mehr-wert-steuer-gesamt>116.74</mehr-wert-steuer-gesamt>
+		</rechnungs-betrag>
+		
+		<zahlungs-moeglichkeit>
+			<zahlungs-art>Deutsche Bank Lörrach
+						  IBAN: DE18 6837 0034 0999 6663 33
+						  BIC: DEUTDE6F683
+			</zahlungs-art>
+		</zahlungs-moeglichkeit>
+	</rechnung>
+	
+	<rechnung>
+		<leistungs-empfaenger>
+			<name>
+				<titel>Familie</titel>
+				<nachname>Urmel</nachname>
+			</name>
+			
+			<anschrift>
+				<strasse>Ulturenstrasse</strasse>
+				<haus-nummer>764</haus-nummer>
+				<post-leit-zahl>43210</post-leit-zahl>
+				<stadt>Ultursingen</stadt>
+			</anschrift>
+		</leistungs-empfaenger>
+		
+		<unternehmer>
+			<firmen-name>Bestattungen Unterberg</firmen-name>
+	
+	        <anschrift>
+	            <strasse>Oberbergweg</strasse>
+	            <haus-nummer>5</haus-nummer>
+	            <post-leit-zahl>43210</post-leit-zahl>
+	            <stadt>Ultursingen</stadt>
+	        </anschrift>
+	        <telefon>0478/777555</telefon>
+	        <e-mail>unter@berg.de</e-mail>
+			<umsatz-steuer-identifikations-nummer>DE987654321</umsatz-steuer-identifikations-nummer>
+		</unternehmer>
+		
+		<bestellung>
+			<leistung>
+				<menge>1</menge>
+				<einheit>Stk.</einheit>
+				<bezeichnung>Urne, Eiche massiv</bezeichnung>
+				<gesamt-preis waehrung="Euro">299.99</gesamt-preis>
+			</leistung>
+			
+			<leistung>
+				<menge>1</menge>
+				<einheit>Stk.</einheit>
+				<bezeichnung>Überführung Krematorium Feuerbach inkl. Begleitpersonal</bezeichnung>
+				<gesamt-preis waehrung="Euro">349.00</gesamt-preis>
+			</leistung>
+			
+			<leistung>
+				<menge>1</menge>
+				<einheit>Stk.</einheit>
+				<bezeichnung>Dekoration</bezeichnung>
+				<gesamt-preis waehrung="Euro">149.50</gesamt-preis>
+			</leistung>
+			
+			<leistung>
+				<menge>40</menge>
+				<einheit>Stk.</einheit>
+				<bezeichnung>Trauerkarten inkl. Briefmarken</bezeichnung>
+				<einzel-preis waehrung="Euro">2.00</einzel-preis>
+				<gesamt-preis waehrung="Euro">80.00</gesamt-preis>
+			</leistung>
+		</bestellung>
+		
+		<ausstellungs-datum>2017-10-19</ausstellungs-datum>
+		
+		<rechnungs-nummer>89321311</rechnungs-nummer>
+		
+		<rechnungs-betrag waehrung="Euro">
+			<gesamt>878.49</gesamt>
+			<netto-betrag>738.23</netto-betrag>
+			<mehr-wert-steuer-gesamt>140.26</mehr-wert-steuer-gesamt>
+		</rechnungs-betrag>
+		
+		<zahlungs-moeglichkeit>
+			<zahlungs-art>IBAN:DE16660501010077889911</zahlungs-art>
+			<zahlungs-art>UBS Zürich(BIC/Kontonr.): UBSWCHZH80H / 75847683 (für Zahlungen ausserhalb Deutschlands)</zahlungs-art>
+			<zahlungs-art>Bitcoin Adresse: 1P82rBiJHDFSav2QrKx1bvdDRVh5QnGkkZ (nur für Einmalzahlung, keine Rückbuchung)</zahlungs-art>
+		</zahlungs-moeglichkeit>
+	</rechnung>
+</rechnungen>
